@@ -1,3 +1,6 @@
+## Fichiers temporaires des éditeurs de texte
+*.swp
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
