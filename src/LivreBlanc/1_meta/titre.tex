@@ -1,3 +1,4 @@
+%[1 Page de titre
 \titlehead{%
 	\begin{center}%
 		\ttfamily%
@@ -6,6 +7,7 @@
 		C~o~n~f~i~d~e~n~t~i~e~l%
 	\end{center}%
 }
+
 \subject{%
 	Livres Bleu, vert blanc
 }
@@ -21,10 +23,10 @@
 }
 
 \author{%
-		Gile Dey%
+	Gile~\bsc{Dey}%
 		\footnote{Un pseudo pas secret.}
 	\and
-		Inco Gnito%
+	Inco~\bsc{Gnito}%
 		\footnote{Identité connue de la rédaction.}
 }
 
@@ -33,3 +35,45 @@
 }
 
 \date{\today}
+
+%[1 Verso de la page de titre
+\uppertitleback{%[2
+	% \changetext{0pt}{-7em}{}{}{}
+	\begin{center}
+		Travail proposé à~:\\SSP Fribourg\\[1cm]
+		Travail personnel qui n'engage pas le SSP.
+	\end{center}
+}
+
+\lowertitleback{%[2
+	{%
+		% \changetext{0pt}{-7em}{}{}{}
+		\small\sffamily
+		\begin{center}
+			Ce travail, sauf parties avec mentions contraires, est publié sous la
+			licence libre\\[1ex]
+			\textbf{Creative Commons-BY-NC-SA} :\\[1ex]
+			\texttt{http://creativecommons.org/licenses/by-nc-sa/3.0/ch/deed.fr}
+		\end{center}
+		\bigskip
+		\textbf{BY : Paternité.}\\
+			Vous devez citer le nom de l'auteur original.\\[2ex]
+		\textbf{NC : Pas d’Utilisation Commerciale.}\\
+			Vous n'êtes pas autoriser à faire un usage commercial de cette Oeuvre, tout ou partie du matériel la composant.\\[2ex]
+		\textbf{SA : Partage des Conditions Initiales à l'Identique.}\\
+			Si vous modifiez, transformez ou adaptez cette création, vous n'avez le droit de distribuer la création qui en résulte que sous un contrat identique à celui-ci.
+			En outre, à chaque réutilisation ou distribution, vous devez faire apparaître clairement aux autres les conditions contractuelles de mise à disposition de cette création.
+			Chacune de ces conditions peut être levée si vous obtenez l'autorisation du titulaire des droits.
+		\par\bigskip
+		\begin{center}
+			\copyright
+			2014 by
+			G.~\bsc{Dey}
+			\&
+			I.~\bsc{Gnito}
+		\end{center}
+	}
+}
+
+
+% vim: set ts=3 sts=3 sw=3 tw=100 fdm=marker foldmarker=%[,%] filetype=tex spell:
