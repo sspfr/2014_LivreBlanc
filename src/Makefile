@@ -4,7 +4,7 @@ DOSS    = ${OUT}
 #NOERR   = > /dev/null
 CC      = pdflatex -halt-on-error -output-directory=${OUT} $< ${NOERR}
 TARGET  = $(patsubst %.tex, ${OUT}/%.pdf, $(wildcard *.tex))
-INC     = $(shell inc LivreBlanc -type f -iname "*.tex")
+INC     = $(shell find inc -type f -iname "*.tex")
 
 all: target
 
